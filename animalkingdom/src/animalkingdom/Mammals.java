@@ -33,7 +33,7 @@ public class Mammals extends AnimalActions{
 
 	@Override
 	public String getMoveType(){
-		return "walk";
+		return "feet";
 	};
 	// Whats happening here is the same as whats happening above.
 	// The Diffrence is this is a pre defined string returning how the mammel moves.
@@ -53,7 +53,7 @@ public class Mammals extends AnimalActions{
 
 	@Override
 	public String toString(){
-		return "Mammel Type: " + getName() + ". It was originally discovered in " + year + ". It moved with its " + getMoveType() + " and breaths with its" + getBreathingType() + "." + "\n" ;
+		return "Mammel Type: " + getName() + ". It was originally discovered in " + year + ". It moves with its " + getMoveType() + " and breaths with its " + getBreathingType() + "." + "\n" ;
 		// (forwardSlash)n makes a new line
 	}
 	// This one is unique > https://www.tutorialspoint.com/java/number_tostring.htm > https://www.javatpoint.com/understanding-toString()-method > https://stackoverflow.com/questions/3615721/how-to-use-the-tostring-method-in-java

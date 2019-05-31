@@ -10,6 +10,37 @@ import java.util.*;
 public class Main
 // every java app must have public 'Main' class. the classname (in this case Main), must relate back to the file name.
 {
+	public static void renderAnimal(ArrayList<AnimalActions> animals, CheckAnimal tester)
+	// see line 14 - 16 for public static void
+	// the strings we are passing in here is an array from AnimalActions containing animals
+	// the args we are passing is CheckAnimal, to test it and see if its an animal or not (true/false)
+	{
+		for (AnimalActions x : animals )
+		// for loop itterates over a range of values > https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+		// takes in the following (initilization; termination; increments) { statement/s }
+		// the use of : is acting as a syntax sugar, its another way of a for-if-else loop
+		// see > https://www.sitepoint.com/java-ternary-operator/ and https://stackoverflow.com/a/2399595
+		{
+			if (tester.test(x)){
+				System.out.println(x.toString());
+				// x.toString is explained in mammels.java line 59 - 63
+			}
+		};
+	}
+
+	public static ArrayList<AnimalActions> sortAnimalsArray(ArrayList<AnimalActions> animals, CheckAnimal tester)
+	{
+		ArrayList<AnimalActions> sortedAnimalsActionsArray = new ArrayList<AnimalActions>();
+		for (AnimalActions x : animals) {
+			if (tester.test(x)){
+				sortedAnimalsActionsArray.add(x);
+				// sortedAnimalsActionsArray.add(x) is explained on line 70;
+			}
+		}
+		return sortedAnimalsActionsArray();
+		// returns the now sorted array
+	}
+
 	public static void main(String[] args)
 	// above is the public 'main' method. This is considered an entry point. It's also a child of the public class Main.
 	// this has to be 'public' because java looks for the public main method signature. 
@@ -27,16 +58,16 @@ public class Main
 		Mammals Racoon = new Mammals("Raccoon", 1758, 4);
 		Mammals Bigfoot = new Mammals("Bigfoot", 2050, 242450);
 
-		Birds Pigeon = new Birds("Pigeon", 1873, 2);
-		Birds Peacock = new Birds("Peacock", 1821, 1);
-		Birds Toucan = new Birds("Toucan Sam", 1758, 4);
-		Birds Parrot = new Birds("Parrot", 1824, 1);
-		Birds Swan = new Birds("Swan", 1758, 3);
+		// Birds Pigeon = new Birds("Pigeon", 1873, 2);
+		// Birds Peacock = new Birds("Peacock", 1821, 1);
+		// Birds Toucan = new Birds("Toucan Sam", 1758, 4);
+		// Birds Parrot = new Birds("Parrot", 1824, 1);
+		// Birds Swan = new Birds("Swan", 1758, 3);
 
-		Fish Salmon = new Fish("Salmon", 1758, 2);
-		Fish Catfish = new Fish("Catfish", 1817, 3);
-		Fish Perch = new Fish("Perch", 1758, 4);
-		Fish Shark = new Fish("Shark", 0001, 20);
+		// Fish Salmon = new Fish("Salmon", 1758, 2);
+		// Fish Catfish = new Fish("Catfish", 1817, 3);
+		// Fish Perch = new Fish("Perch", 1758, 4);
+		// Fish Shark = new Fish("Shark", 0001, 20);
 
 		// These are ALL Intantiate objects, this means we are making a new object
 		// The ReadMe wants us to assign an unique number, name and year discovered // REGARDLESS OF CLASSIFICATION
@@ -57,36 +88,20 @@ public class Main
 		myList.add(Armadillo);
 		myList.add(Racoon);
 		myList.add(Bigfoot);
-		myList.add(Pigeon);
-		myList.add(Peacock);
-		myList.add(Toucan);
-		myList.add(Parrot);
-		myList.add(Swan);
-		myList.add(Salmon);
-		myList.add(Catfish);
-		myList.add(Perch);
-		myList.add(Shark);
+		// myList.add(Pigeon);
+		// myList.add(Peacock);
+		// myList.add(Toucan);
+		// myList.add(Parrot);
+		// myList.add(Swan);
+		// myList.add(Salmon);
+		// myList.add(Catfish);
+		// myList.add(Perch);
+		// myList.add(Shark);
 
 		// myList.add(objectname) simply adds the object to the array.
 		// QUESTION: is there a way to automate this process so i dont have to declare myList.add(objectname); for every object?
 
 		System.out.println("*** thing ***");
-	}
-
-	public static void renderAnimal(ArrayList<AnimalActions> animals, CheckAnimal tester)
-	// see line 14 - 16 for public static void
-	// the strings we are passing in here is an array from AnimalActions containing animals
-	// the args we are passing is CheckAnimal, to test it and see if its an animal or not (true/false)
-	{
-		for (AnimalActions x : animals )
-		// for loop itterates over a range of values > https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
-		// takes in the following (initilization; termination; increments) { statement/s }
-		// the use of : is acting as a syntax sugar, its another way of a for-if-else loop
-		// see > https://www.sitepoint.com/java-ternary-operator/ and https://stackoverflow.com/a/2399595
-		{
-			if (tester.test(x)){
-				System.out.println(x.toString());;
-			}
-		};
+		System.out.println(myList.toString());
 	}
 };
