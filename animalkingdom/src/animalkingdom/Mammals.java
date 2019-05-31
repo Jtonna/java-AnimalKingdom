@@ -1,7 +1,6 @@
 package animalkingdom;
 
 public class Mammals extends AnimalActions{
-
 	// extends means its extending the class 'AnimalActions'
 	// the class that gets extended MUST BE 'abstract'
 	// in a nutshell this is inhereting information (for a lack of a better word in my vocabulary) from the base class.
@@ -12,9 +11,9 @@ public class Mammals extends AnimalActions{
 	// What this does is take in a single parameter or multiple parameters.
 	// Since Java is such a strictly typed language we need to tell it what type of data is being passed in as a parameter, in this case its a string, int (integer), int (integer)
 	{
-		this.name = itsName;
-		this.year = yearFound;
-		this.food = foodNeeded;
+		this.name = name;
+		this.year = year;
+		this.food = food;
 
 		// In Java when we pass parameters we need a way to easily access them.
 		// We need to do this because the field is shadowed by a method or constructor parameter.
@@ -25,12 +24,12 @@ public class Mammals extends AnimalActions{
 
 	@Override
 	public String getName(){
-		return itsName;
+		return name;
 	};
 	// Overrides are a bit complex > https://www.geeksforgeeks.org/overriding-in-java/
 	// Essentially whats happening is @Override is 'overridding' its parent public method.
 	// note how i said public. A private Method or class method cannot, again CANNOT be overridden.
-	// The @Override is followed by a class constructor that returns the value of 'itsName'
+	// The @Override is followed by a class constructor that returns the value of 'name'
 
 	@Override
 	public String getMoveType(){
@@ -54,7 +53,7 @@ public class Mammals extends AnimalActions{
 
 	@Override
 	public String toString(){
-		return "Mammel Type: " + getName() + ". It was originally discovered in " + yearFound + ". It moved with its " + getMoveType() + " and breaths with its" + getBreathingType() + "." + "\n" ;
+		return "Mammel Type: " + getName() + ". It was originally discovered in " + year + ". It moved with its " + getMoveType() + " and breaths with its" + getBreathingType() + "." + "\n" ;
 		// (forwardSlash)n makes a new line
 	}
 	// This one is unique > https://www.tutorialspoint.com/java/number_tostring.htm > https://www.javatpoint.com/understanding-toString()-method > https://stackoverflow.com/questions/3615721/how-to-use-the-tostring-method-in-java

@@ -27,16 +27,16 @@ public class Main
 		Mammals Racoon = new Mammals("Raccoon", 1758, 4);
 		Mammals Bigfoot = new Mammals("Bigfoot", 2050, 242450);
 
-		Birds Pigeon = new Birds("Pigeon", 1873, 2);
-		Birds Peacock = new Birds("Peacock", 1821, 1);
-		Birds Toucan = new Birds("Toucan Sam", 1758, 4);
-		Birds Parrot = new Birds("Parrot", 1824, 1);
-		Birds Swan = new Birds("Swan", 1758, 3);
+		// Birds Pigeon = new Birds("Pigeon", 1873, 2);
+		// Birds Peacock = new Birds("Peacock", 1821, 1);
+		// Birds Toucan = new Birds("Toucan Sam", 1758, 4);
+		// Birds Parrot = new Birds("Parrot", 1824, 1);
+		// Birds Swan = new Birds("Swan", 1758, 3);
 
-		Fish Salmon = new Fish("Salmon", 1758, 2);
-		Fish Catfish = new Fish("Catfish", 1817, 3);
-		Fish Perch = new Fish("Perch", 1758, 4);
-		Fish Shark = new Fish("Shark", 0001, 20);
+		// Fish Salmon = new Fish("Salmon", 1758, 2);
+		// Fish Catfish = new Fish("Catfish", 1817, 3);
+		// Fish Perch = new Fish("Perch", 1758, 4);
+		// Fish Shark = new Fish("Shark", 0001, 20);
 
 		// These are ALL Intantiate objects, this means we are making a new object
 		// The ReadMe wants us to assign an unique number, name and year discovered // REGARDLESS OF CLASSIFICATION
