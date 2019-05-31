@@ -73,13 +73,18 @@ public class Main
 		System.out.println("*** thing ***");
 	}
 
-	public static void renderAnimal(ArrayList<AnimalActions> animals, CheckAnimal tested)
+	public static void renderAnimal(ArrayList<AnimalActions> animals, CheckAnimal tester)
 	// see line 14 - 16 for public static void
 	// the strings we are passing in here is an array from AnimalActions containing animals
 	// the args we are passing is CheckAnimal, to test it and see if its an animal or not (true/false)
 	{
-		for (AnimalActions x : animals ){
-			if (tested.test(x)){
+		for (AnimalActions x : animals )
+		// for loop itterates over a range of values > https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+		// takes in the following (initilization; termination; increments) { statement/s }
+		// the use of : is acting as a syntax sugar, its another way of a for-if-else loop
+		// see > https://www.sitepoint.com/java-ternary-operator/ and https://stackoverflow.com/a/2399595
+		{
+			if (tester.test(x)){
 				System.out.println(x.toString());;
 			}
 		};
