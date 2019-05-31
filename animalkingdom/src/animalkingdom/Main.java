@@ -1,5 +1,12 @@
 package animalkingdom;
 
+import java.util.*;
+// WARNING: this imports the WHOLE package, in the future IDE's will import only what we are using. importing the whole package can lead to a larger file size than needed.
+
+
+// https://www.tutorialspoint.com/java/java_constructors.htm 
+// above is just a random resource i used to help learn things
+
 public class Main
 // every java app must have public 'Main' class. the classname (in this case Main), must relate back to the file name.
 {
@@ -10,5 +17,36 @@ public class Main
 	// "(String[] args)" is used when the method needs to pass an Array (yes, array) of string arguments to the application when we run it.
 	{
 		System.out.println("Hello There");
+		// this is just a simple (console.log("hello there") )
+
+		Mammals Panda = new Mammals("Panda", 1869, 2);
+		Mammals Zebra = new Mammals("Zebra", 1778, 5);
+		Mammals Koala = new Mammals("Koals", 1816, 4);
+		Mammals Sloth = new Mammals("Sloth", 1758, 1);
+		Mammals Armadillo = new Mammals("Armadillo", 1758, 8);
+		Mammals Racoon = new Mammals("Raccoon", 1758, 4);
+		Mammals Bigfoot = new Mammals("Bigfoot", 2050, 242450);
+
+		Birds Pigeon = new Birds("Pigeon", 1873, 2);
+		Birds Peacock = new Birds("Peacock", 1821, 1);
+		Birds Toucan = new Birds("Toucan Sam", 1758, 4);
+		Birds Parrot = new Birds("Parrot", 1824, 1);
+		Birds Swan = new Birds("Swan", 1758, 3);
+
+		Fish Salmon = new Fish("Salmon", 1758, 2);
+		Fish Catfish = new Fish("Catfish", 1817, 3);
+		Fish Perch = new Fish("Perch", 1758, 4);
+		Fish Shark = new Fish("Shark", 0001, 20);
+
+		// These are ALL Intantiate objects, this means we are making a new object
+		// The ReadMe wants us to assign an unique number, name and year discovered // REGARDLESS OF CLASSIFICATION
+		// The assigned data is then passed to the respective class to be processed.
+		// Once the object is processed, it WILL create an instance of a new class.
+		// Here were going to be passing data a bit diffrently. the data were passing is as follows below
+		// name, year discovered, food.
+		// we are going to use a bit of Java Magic to assign a unique identifying number to each entry.
+		// in terms of scalability this would be the best pratice so we could add mass ammounts of data and not worry about manually adding a unique ID
+
+
 	}
 }
