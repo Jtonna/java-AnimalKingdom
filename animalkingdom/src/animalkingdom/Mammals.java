@@ -6,7 +6,7 @@ public class Mammals extends AnimalActions{
 	// in a nutshell this is inhereting information (for a lack of a better word in my vocabulary) from the base class.
 	// see AnimalActions.java line 3
 
-	public Mammals(String Name, int year, int food)
+	public Mammals(String name, int year, int food)
 	// This is a class constructor
 	// What this does is take in a single parameter or multiple parameters.
 	// Since Java is such a strictly typed language we need to tell it what type of data is being passed in as a parameter, in this case its a string, int (integer), int (integer)
