@@ -27,16 +27,16 @@ public class Main
 		Mammals Racoon = new Mammals("Raccoon", 1758, 4);
 		Mammals Bigfoot = new Mammals("Bigfoot", 2050, 242450);
 
-		// Birds Pigeon = new Birds("Pigeon", 1873, 2);
-		// Birds Peacock = new Birds("Peacock", 1821, 1);
-		// Birds Toucan = new Birds("Toucan Sam", 1758, 4);
-		// Birds Parrot = new Birds("Parrot", 1824, 1);
-		// Birds Swan = new Birds("Swan", 1758, 3);
+		Birds Pigeon = new Birds("Pigeon", 1873, 2);
+		Birds Peacock = new Birds("Peacock", 1821, 1);
+		Birds Toucan = new Birds("Toucan Sam", 1758, 4);
+		Birds Parrot = new Birds("Parrot", 1824, 1);
+		Birds Swan = new Birds("Swan", 1758, 3);
 
-		// Fish Salmon = new Fish("Salmon", 1758, 2);
-		// Fish Catfish = new Fish("Catfish", 1817, 3);
-		// Fish Perch = new Fish("Perch", 1758, 4);
-		// Fish Shark = new Fish("Shark", 0001, 20);
+		Fish Salmon = new Fish("Salmon", 1758, 2);
+		Fish Catfish = new Fish("Catfish", 1817, 3);
+		Fish Perch = new Fish("Perch", 1758, 4);
+		Fish Shark = new Fish("Shark", 0001, 20);
 
 		// These are ALL Intantiate objects, this means we are making a new object
 		// The ReadMe wants us to assign an unique number, name and year discovered // REGARDLESS OF CLASSIFICATION
@@ -46,6 +46,29 @@ public class Main
 		// name, year discovered, food.
 		// we are going to use a bit of Java Magic to assign a unique identifying number to each entry.
 		// in terms of scalability this would be the best pratice so we could add mass ammounts of data and not worry about manually adding a unique ID
+
+		ArrayList<AnimalActions> myList = new ArrayList<AnimalActions>();
+		// what this line above essentially does is create a new empty array named myList
+		// we are also telling it where its going to get the data from with <AnimalActions>
+		myList.add(Panda);
+		myList.add(Zebra);
+		myList.add(Koala);
+		myList.add(Sloth);
+		myList.add(Armadillo);
+		myList.add(Racoon);
+		myList.add(Bigfoot);
+		myList.add(Pigeon);
+		myList.add(Peacock);
+		myList.add(Toucan);
+		myList.add(Parrot);
+		myList.add(Swan);
+		myList.add(Salmon);
+		myList.add(Catfish);
+		myList.add(Perch);
+		myList.add(Shark);
+
+		// myList.add(objectname) simply adds the object to the array.
+		// QUESTION: is there a way to automate this process so i dont have to declare myList.add(objectname); for every object?
 
 
 	}
