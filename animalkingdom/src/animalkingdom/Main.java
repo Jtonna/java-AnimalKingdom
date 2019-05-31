@@ -72,4 +72,16 @@ public class Main
 
 		System.out.println("*** thing ***");
 	}
-}
+
+	public static void renderAnimal(ArrayList<AnimalActions> animals, CheckAnimal tested)
+	// see line 14 - 16 for public static void
+	// the strings we are passing in here is an array from AnimalActions containing animals
+	// the args we are passing is CheckAnimal, to test it and see if its an animal or not (true/false)
+	{
+		for (AnimalActions x : animals ){
+			if (tested.test(x)){
+				System.out.println(x.toString());;
+			}
+		};
+	}
+};
