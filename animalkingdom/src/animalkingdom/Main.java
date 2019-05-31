@@ -70,6 +70,6 @@ public class Main
 		// myList.add(objectname) simply adds the object to the array.
 		// QUESTION: is there a way to automate this process so i dont have to declare myList.add(objectname); for every object?
 
-
+		System.out.println("*** thing ***");
 	}
 }
