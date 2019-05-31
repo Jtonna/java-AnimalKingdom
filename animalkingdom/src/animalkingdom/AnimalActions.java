@@ -22,7 +22,6 @@ public abstract class AnimalActions {
 	public abstract String getName();
 	public abstract String getBreathingType();
 	public abstract String getMoveType();
-	public abstract int wasDiscoveredIn();
 
 	// the lines above are all 'constructors', this is an example of constructor overloading
 	// constructor overloading is the concept of having multiple constructors with diffrent parameters
@@ -55,7 +54,7 @@ public abstract class AnimalActions {
 		// food -- is a decrement operator. its the opposite of line 40
 	}
 
-	public int yearFound(){
+	public int wasDiscoveredIn(){
 		return year;
 	}
 }
