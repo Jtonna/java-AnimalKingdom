@@ -28,7 +28,7 @@ public class Fish extends AnimalActions {
 
 	@Override
 	public String getReproductionType(){
-		return "lays eggs";
+		return "lays small eggs";
 	};
 
 	@Override
